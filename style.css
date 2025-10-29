@@ -1,0 +1,189 @@
+:root{
+    --text : #1E2A78;
+    --Bleu-gris-clair :#6B7C93 ;
+    --Orange-vif   :#FF5A1F;
+    --Bleu-très-clair :#F5F7FB;
+    --Orange :#FF6B35;
+    --Bleu-nuit  :#0A1F44;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-width: 100%;
+    padding-right: 30px;
+
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--Bleu-très-clair);
+
+}
+header >.logo{
+    display: flex;
+    gap: 10px;
+
+}
+main >div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 30px;
+}
+.button{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.aside1{
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.button >button{
+    width: 100%;
+    height: 30px;
+
+}
+.btn1{
+    background-color: var(--Orange);
+    border: #FF6B35 solid 1px;
+    border-radius: 5px;
+
+
+}
+.btn2{
+    background-color: white;
+    border: white;
+
+}
+.mobile{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid ;
+
+}
+
+.desktop{
+    display: none;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+span{
+    color: orange;
+}
+.aside2{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.aside2 >.img1{
+    max-width: 90%;
+    height: 100%;
+
+    position: relative;
+}
+footer{
+    text-align: center;
+    margin: 40px;
+}
+footer >div{
+    display: none;
+}
+.img2{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+
+}
+
+
+
+@media screen and (min-width :700px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+        gap: 15px;
+        
+    }
+    .desktop >a{
+         text-decoration: none;
+         color: black;
+         align-items: center;
+    }
+    nav >button{
+        border: 1px var(--Orange-vif) solid;
+        background-color: #FF5A1F;
+        width: 100px;
+        height: 30px;
+        border-radius: 4px;
+        color: #F5F7FB;
+    }
+    main >div{
+        width: 100%;
+        flex-direction: row;
+    }
+    .aside1 {
+        width: 50%; 
+        justify-content: center;
+
+
+
+    }
+    .aside2 >.img1{
+        width: 100%;
+        height: 100%;
+    }
+    .aside2{
+        width: 50%;
+
+    }
+    .img2{
+         width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 65%;
+
+}
+    .button{
+        flex-direction: row;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer >div{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+
+
+
+    }
+    footer >div >img{
+        width: 40px;
+        height: 80px;
+    }
+
+    
+}
